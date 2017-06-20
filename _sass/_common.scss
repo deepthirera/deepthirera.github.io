@@ -1,19 +1,12 @@
-html {
-  //height: 100vw;
-}
-
 body, html {
   padding: 0;
   margin: 0;
-  height: 100%;
   width: 100%;
-  font-size: 12px;
   .container {
-    width: 1200px;
-    height: 100%;
     border: 1px solid #006973;
+    border-top: none;
     box-shadow: 0 0 5px #00808c;
-    padding: 100px;
+    padding: 3% 7%;
     background-color: white;
   }
 
@@ -25,11 +18,8 @@ body, html {
 
   #main-content {
     font-family: 'Fira Sans', 'Open Sans', sans-serif;
-    font-size: 16px;
     line-height: 2;
     background-color: $primary-color;
-    min-height: 606px;
-    height: 100%;
 
     h1 {
       font-size: 25px;
@@ -41,7 +31,6 @@ body, html {
 
   #footer {
     background-color: $primary-color;
-    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -54,6 +43,20 @@ body, html {
   .icon {
     color: white;
     padding: 10px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  body {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  body, html {
+    .container {
+      width: 1200px;
+    }
   }
 }
 

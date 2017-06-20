@@ -1,17 +1,16 @@
 
 #header {
-  height: 80px;
   .navbar.navbar-default {
-    border: 1px solid $light-gray;
     background-color: white;
+    margin-bottom: 0;
     .navbar-header {
       width: 100%;
       .navbar-brand {
-          padding-top: 25px;
-          height: 100px;
-          img {
-            max-width: 180px;
-          }
+        padding-top: 25px;
+        height: 100px;
+        img {
+          max-width: 180px;
+        }
       }
       .header-title-wrapper {
         line-height: 1;
@@ -20,9 +19,15 @@
           font-size: 30px;
           padding-top: 30px;
           color: $primary-color;
+          @media (max-width: $screen-xs-max) {
+            font-size: 16px;
+          }
         }
         .navbar-brand-sub-title {
           color: $dark-gray;
+          @media (max-width: $screen-xs-max) {
+            font-size: 12px;
+          }
         }
       }
     }
