@@ -1,0 +1,49 @@
+
+#header {
+  height: 80px;
+  .navbar.navbar-default {
+    border: 1px solid $light-gray;
+    background-color: white;
+    .navbar-header {
+      width: 100%;
+      .navbar-brand {
+          padding-top: 25px;
+          height: 100px;
+          img {
+            max-width: 180px;
+          }
+      }
+      .header-title-wrapper {
+        line-height: 1;
+        font-weight: bold;
+        .navbar-brand-title {
+          font-size: 30px;
+          padding-top: 30px;
+          color: $primary-color;
+        }
+        .navbar-brand-sub-title {
+          color: $dark-gray;
+        }
+      }
+    }
+
+    #navbar2 {
+      li {
+        margin-top: 25px;
+        &.active {
+          a {
+            color: white;
+            background-color: $primary-color;
+            border-radius: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+      .dropdown-menu {
+        li {
+          margin: 15px;
+        }
+      }
+    }
+  }
+}
