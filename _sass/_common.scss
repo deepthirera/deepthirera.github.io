@@ -10,11 +10,11 @@ body, html {
     box-shadow: 0 0 5px #00808c;
     padding: 7%;
     background-color: white;
-    min-height: calc(100vh - 102px - 128px);
+    min-height: calc(100vh - 101px - 128px);
   }
 
   #header {
-    height: 102px;
+    height: 101px;
     .navbar-brand-title {
       font-family: 'Amiri', serif;
     }

@@ -1,8 +1,11 @@
 
 #header {
-  .navbar.navbar-default {
-    background-color: white;
+  .navbar.navbar-fixed-top {
+    background-color: $darker-gray;
     margin-bottom: 0;
+    .row {
+      margin-right: 20px;
+    }
     .navbar-header {
       width: 100%;
       .navbar-brand {
@@ -10,6 +13,15 @@
         height: 100px;
         img {
           max-width: 180px;
+        }
+      }
+      .navbar-toggle {
+        border: 1px solid $light-gray;
+        margin-right: 0;
+        margin-top: 30px;
+        margin-left: 30px;
+        .icon-bar {
+          background-color: $light-gray;
         }
       }
       .header-title-wrapper {
@@ -24,7 +36,7 @@
           }
         }
         .navbar-brand-sub-title {
-          color: $dark-gray;
+          color: $light-gray;
           @media (max-width: $screen-xs-max) {
             font-size: 12px;
           }
@@ -33,8 +45,18 @@
     }
 
     #navbar2 {
+      .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+        background-color: $darker-gray;
+      }
       li {
         margin-top: 25px;
+        a {
+          color: $light-gray;
+        }
+        a:hover {
+          color: white;
+          background-color: $darker-gray;
+        }
         &.active {
           a {
             color: white;
@@ -45,6 +67,7 @@
         }
       }
       .dropdown-menu {
+        background-color: $darker-gray;
         li {
           margin: 15px;
         }
