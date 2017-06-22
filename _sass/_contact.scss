@@ -1,0 +1,40 @@
+#contact {
+  .tagline {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .contact-form {
+    text-align: center;
+  }
+  a.btn {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    padding: 10px 50px;
+    font-weight: 500;
+    &.primary {
+      background: $primary-color;
+      color: white;
+    }
+  }
+
+  .office-location {
+    margin-top: 40px;
+    .address {
+      padding-top: 40px;
+    }
+  }
+
+  .box {
+    background-color: $lighter-gray;
+    border-radius: 15px;
+    margin: 4%;
+    padding: 5%;
+    min-height: 320px;
+    text-align: center;
+    .icon {
+      font-size: 50px;
+      color: $primary-color;
+    }
+  }
+}
