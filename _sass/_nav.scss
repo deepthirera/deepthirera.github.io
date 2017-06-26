@@ -26,7 +26,6 @@
       }
       .header-title-wrapper {
         line-height: 1;
-        font-weight: bold;
         .navbar-brand-title {
           font-size: 30px;
           padding-top: 30px;
@@ -59,8 +58,8 @@
         }
         &.active {
           a {
-            color: white;
-            background-color: $primary-color;
+            color: $primary-color;
+            background-color: $darker-gray;
             border-radius: 10px;
             font-weight: bold;
           }
