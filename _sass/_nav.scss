@@ -56,9 +56,11 @@
           color: white;
           background-color: $darker-gray;
         }
+        &.active > a {
+          color: $primary-color;
+        }
         &.active {
           a {
-            color: $primary-color;
             background-color: $darker-gray;
             border-radius: 10px;
             font-weight: bold;
@@ -67,9 +69,22 @@
       }
       .dropdown-menu {
         background-color: $darker-gray;
+        min-width: 320px;
         li {
           margin: 15px;
         }
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px 6px;
+        border-radius: 0 6px 6px 6px;
       }
     }
   }

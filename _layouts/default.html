@@ -19,6 +19,18 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amiri:400,700" rel="stylesheet">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
   </head>
 
   <body>
@@ -49,11 +61,59 @@
               <!--{% endif %}-->
               <!--{% assign tabClass = 'active' %}-->
               <li class="{% if page.url == '/' %} active {% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Registration <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Incorporation Services <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Proprietorship Firm</a></li>
+                      <li><a href="#">Hindu Undivided Family (HUF)</a></li>
+                      <li><a href="#">Partnership Firm</a></li>
+                      <li><a href="#">Trust</a></li>
+                      <li><a href="#">One Person Company (OPC)</a></li>
+                      <li><a href="#">Private Limited Company</a></li>
+                      <li><a href="#">Section 8 Company</a></li>
+                      <li><a href="#">Limited Liability Partnership (LLP) </a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Post Incorporation Services And Registrations <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Permanent Account Number (PAN) & TAN</a></li>
+                      <li><a href="#">Goods And Services Tax (GST)</a></li>
+                      <li><a href="#">Professional Tax</a></li>
+                      <li><a href="#">MSME / SSI</a></li>
+                      <li><a href="#">Provident Fund (PF)</a></li>
+                      <li><a href="#">Employee State Insurance (ESI)</a></li>
+                      <li><a href="#">Importer Exporter Code (IEC)</a></li>
+                      <li><a href="#">Trade Mark</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Annual Tax & Statutory Compliances <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Income Tax Return</a></li>
+                      <li><a href="#">Registrar Of Companies (ROC) Return</a></li>
+                      <li><a href="#">GST Return</a></li>
+                      <li><a href="#">Professional Tax Return</a></li>
+                      <li><a href="#">LLP Annual Return</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               <li class="dropdown {% if page.tab == 'services' %} active {% endif %}">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="{{ site.baseurl }}/services">Action</a></li>
-                  <li><a href="#">Another action</a></li>
+                  <li class="dropdown dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Entry India Services <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Entry Strategy And Business Set-Up</a></li>
+                      <li><a href="#">Entry Strategy And Business Set-Up 1</a></li>
+                      <li><a href="#">Entry Strategy And Business Set-Up 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Corporate Law And Allied Services</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">Nav header</li>
@@ -61,7 +121,9 @@
                   <li><a href="#">One more separated link</a></li>
                 </ul>
               </li>
-              <li class="{% if page.url == '/contact/' %} active {% endif %}"><a href="{{ site.baseurl }}/contact">Contact</a></li>
+              <li><a href="{{ site.baseurl }}/">Audits</a></li>
+              <li><a href="{{ site.baseurl }}/">Others</a></li>
+              <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
             </ul>
           </div>
         </div>
