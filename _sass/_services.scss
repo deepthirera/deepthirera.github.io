@@ -1,22 +1,23 @@
 #services {
   .home-banner {
     position: relative;
-    min-height: 200px;
-    background-color: black;
-    margin-top: -1%;
-    opacity: 0.8;
-    color: $light-gray;
+    min-height: 100px;
+    background-image: url("images/services3.jpg");
+    background-repeat: repeat-x;
+    color: white;
     img {
       width: 100%;
-      height: 200px;
+      height: 100px;
     }
     .banner-info {
+      font-size: 25px;
       position: absolute;
       bottom: 0;
       top: 0;
-      padding: 5%;
+      text-align: center;
+      padding-top: 1%;
       width: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.7);
     }
   }
 }

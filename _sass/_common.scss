@@ -2,30 +2,26 @@ body, html {
   padding: 0;
   margin: 0;
   width: 100%;
-  //height:100%;
 
   .container {
-    //border: 1px solid #006973;
+    //border-top: 1px solid #006973;
     //border-top: none;
     //box-shadow: 0 0 5px #00808c;
     padding: 7%;
-    background-color: $lighter-gray;
-    box-shadow: inset 0 0 20px 2px $darker-gray;
+    //background-color: $lighter-gray;
+    //box-shadow: inset 0 0 20px 2px $darker-gray;
     min-height: calc(100vh - 101px - 128px);
   }
 
   #header {
     height: 101px;
-    .navbar-brand-title {
-      font-family: 'Fira Sans', 'Open Sans', sans-serif;
-    }
   }
 
   #main-content {
     color: black;
     font-family: 'Fira Sans', 'Open Sans', sans-serif;
     line-height: 2;
-    background-color: $darker-gray;
+    //background-color: $darker-gray;
     .title {
       text-align: center;
       font-size: 25px;
@@ -33,9 +29,6 @@ body, html {
     }
     h1 {
       font-size: 25px;
-      a {
-        color: $primary-color;
-      }
     }
   }
 
@@ -54,6 +47,10 @@ body, html {
   .icon {
     color: white;
     padding: 10px;
+  }
+
+  h1, h2, h1 > a, h2 > a {
+    color: $secondary-color;
   }
 }
 

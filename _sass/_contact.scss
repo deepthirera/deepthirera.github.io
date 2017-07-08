@@ -13,7 +13,7 @@
     padding: 10px 50px;
     font-weight: 500;
     &.primary {
-      background: $primary-color;
+      background: $secondary-color;
       color: white;
     }
   }
@@ -34,7 +34,7 @@
     text-align: center;
     .icon {
       font-size: 50px;
-      color: $primary-color;
+      color: $secondary-color;
     }
   }
 }
