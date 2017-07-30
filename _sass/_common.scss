@@ -34,7 +34,7 @@ body, html {
 
   #footer {
     height: 128px;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -49,7 +49,7 @@ body, html {
     padding: 10px;
   }
 
-  h1, h2, h1 > a, h2 > a {
+  h1, h2, h3, h1 > a, h2 > a {
     color: $secondary-color;
   }
 }
