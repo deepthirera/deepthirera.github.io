@@ -27,6 +27,11 @@
         text-align: justify;
         line-height: 2;
       }
+      @media (max-width: $screen-sm-min) {
+        h3 {
+          font-size: 25px;
+        }
+      }
     }
   }
   .main-sections {
