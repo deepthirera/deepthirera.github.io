@@ -30,20 +30,6 @@
                 });
             });
         })(jQuery);
-
-function loadXMLDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onload = reqListener; 
-  xhttp.open("GET", "https://www.artsy.net/user/saves", true);
-  xhttp.withCredentials = true;
-  xhttp.send();
-};
-
-function reqListener() {
-    location=this.responseText; 
-    console.log(location);
-};
-
     </script>
   </head>
 
@@ -134,7 +120,6 @@ function reqListener() {
   </div>
 
   <div id="main-content" role="main">
-    <button type="button" onclick="loadXMLDoc()">Change Content</button>
     {{ content }}
   </div>
 
